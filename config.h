@@ -159,6 +159,8 @@ static const Key keys[] = {
 	{ MODKEY,			XK_Tab,        view,                   {0} },
 	/* { MODKEY|ShiftMask,		XK_Tab,	       spawn,                  SHCMD("") }, */
 	{ MODKEY,			XK_q,          killclient,             {0} },
+    { MODKEY,                       XK_n,      focussame,      {.i = +1 } },
+    { MODKEY|ShiftMask,             XK_n,      focussame,      {.i = -1 } },
 	{ MODKEY,			XK_w,          spawn,                  {.v = (const char*[]){ BROWSER, NULL } } },
 	{ MODKEY|ShiftMask,		XK_w,          spawn,                  {.v = (const char*[]){ TERMINAL, "-e", "nmtui", NULL } } },
 	{ MODKEY|ShiftMask,		XK_r,          spawn,                  {.v = (const char*[]){ TERMINAL, "-e", "htop", NULL } } },
